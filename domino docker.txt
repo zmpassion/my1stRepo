@@ -1,0 +1,18 @@
+
+
+
+docker image ls
+
+
+docker run --rm  --name <container name>  
+   -v <Docker volume name>:<data directory> 
+   --hostname <hostname>  -p 8585:8585 -p 1352:1352 <image> --setup
+
+docker run --rm --name dominosetup 
+  -v notesdata:/local/notesdata --hostname docker.renovations.com
+  -p 8585:8585 -p 1352:1352 domino-docker:V1101 --setup
+
+additional server or cp pwd
+docker cp <file on local host> <container name>:<data directory>
+
+
