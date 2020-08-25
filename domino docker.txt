@@ -1,4 +1,4 @@
-
+yes, this is the guide to setup domino docker env
 
 
 docker image ls
